@@ -21,10 +21,11 @@ CREATE TABLE sneakers
   category VARCHAR(30) NOT NULL,
   product_details VARCHAR(3000) NOT NULL,
   PRIMARY KEY (product_id)
-)
+);
 
 LOAD DATA LOCAL INFILE './SneakerData.csv' INTO TABLE sneakers
 FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES
+(product_id, product_name, price, brand, @date, sku, main_color, colorway, designer, silhouette, technology, nickname, category, product_details)
 SET release_date = STR_TO_DATE(@date, '%Y-%m-%d');

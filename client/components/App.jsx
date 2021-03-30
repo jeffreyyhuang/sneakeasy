@@ -1,9 +1,20 @@
+import axios from 'axios';
 import React from 'react';
 import styles from '../css_modules/HomePage.module.css';
 
 class App extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      releases: {}
+    }
+  }
+
+  getReleaseData() {
+    axios.get('/sneakers')
+      .then((response) => {
+
+      })
   }
 
   render() {
@@ -21,7 +32,7 @@ class App extends React.Component {
             </div>
         </div>
         <div alt="Brand Container">
-          
+
         </div>
       </div>
     )
