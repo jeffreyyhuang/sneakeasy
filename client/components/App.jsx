@@ -6,18 +6,26 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      releases: {}
+      releases: []
     }
+  }
+
+  componentDidMount() {
+    this.getReleaseData();
   }
 
   getReleaseData() {
     axios.get('/sneakers')
       .then((response) => {
-
+        this.setState({releases: response.data})
+      })
+      .catch((error) => {
+        console.log('error with axios.get request: ', error);
       })
   }
 
   render() {
+    console.log('this.state.releases: ', this.state.releases);
     return (
       <div className={styles.pageLayoutWrapper}>
         <div>Hello World</div>
@@ -34,6 +42,7 @@ class App extends React.Component {
         <div alt="Brand Container">
 
         </div>
+        
       </div>
     )
   }
