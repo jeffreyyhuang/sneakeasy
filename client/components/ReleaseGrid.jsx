@@ -1,9 +1,19 @@
 import React from 'react';
+import styles from '../css_modules/HomePage.module.css';
+import SneakerCard from './SneakerCard.jsx'
 
 const ReleaseGrid = (props) => {
   return (
-    <div>
-
+    <div className={styles.desktopGridWrapper}>
+      <div className={styles.resultsGrid}>
+        <div className={styles.infiniteHitsWrapper}>
+          <ul className={styles.infiniteHitsList}>
+            <div className={styles.gridWrapper}>
+              
+            </div>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }

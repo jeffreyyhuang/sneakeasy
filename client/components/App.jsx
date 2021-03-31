@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import styles from '../css_modules/HomePage.module.css';
+import ReleaseGrid from './ReleaseGrid.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -42,7 +43,7 @@ class App extends React.Component {
         <div alt="Brand Container">
 
         </div>
-        
+        <ReleaseGrid/>
       </div>
     )
   }
