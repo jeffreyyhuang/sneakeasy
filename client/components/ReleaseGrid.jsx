@@ -9,7 +9,7 @@ const ReleaseGrid = (props) => {
         <div className={styles.infiniteHitsWrapper}>
           <ul className={styles.infiniteHitsList}>
             <div className={styles.gridWrapper}>
-              
+              {props.releases.map((sneaker) => <SneakerCard sneaker={sneaker}/>)}
             </div>
           </ul>
         </div>

@@ -1,0 +1,148 @@
+/* SneakerCard */
+.gridCellWrapper {
+  border-top-left-radius: 5px;
+  border-top: 1px solid rgb(222, 222, 222);
+  padding-top: 25%;
+  position: relative;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  border-right: 1px solid rgb(222, 222, 222);
+  display: block;
+  height: 22.5vw;
+}
+
+  .gridCellContent{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  box-sizing: inherit;
+  display: block;
+}
+
+.productTemplateGridCell {
+  padding: 15px 22px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.gridCellUpperDataRowWrapper {
+  color: black;
+  text-shadow: none;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.releaseDateLabel {
+  height: 15px;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: Plain;
+  line-height: 16px;
+  letter-spacing: 0px;
+  box-sizing: inherit;
+  color: black;
+  text-shadow: none;
+}
+
+.releaseDateText {
+  box-sizing: inherit;
+}
+
+.gridCellImage {
+  max-height: 50%;
+  min-height: 50%;
+  max-width: 60%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.gridCellLowerDataRowWrapper {
+  height: 120px;
+  width: 100%;
+  box-sizing: inherit;
+  display: block;
+}
+
+.gridCellBaseText {
+  padding: 0px 4%;
+  font-size: 12px;
+  font-family: Plain;
+  line-height: 16px;
+  letter-spacing: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-weight: 400;
+  color: black;
+  min-height: 32px;
+  max-height: 32px;
+  text-transform: none;
+  box-sizing: border-box;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.priceDisplayWrapper {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100;
+  margin-top: 22px;
+  margin-bottom: 10%;
+  height: 18px;
+  box-sizing: inherit;
+}
+
+.priceLabel {
+  font-size: 12px;
+  font-family: Plain-Medium;
+  line-height: 1.5;
+  letter-spacing: 1.8px;
+  text-align: center;
+  margin: auto;
+  padding: 0px;
+  box-sizing: border-box;
+  font-weight: normal;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.priceText {
+  box-sizing: inherit;
+}

@@ -1,11 +1,67 @@
 .pageLayoutWrapper {
   display: flex;
   flex-direction: column;
-  max-width: 1920px;
+  /* max-width: 1920px; */
+  width: 100%;
   margin: 0px auto;
   background-color: white;
+  overflow-x: hidden;
 }
 
 .mainImage {
   width: 100%;
+}
+
+/* ReleaseGrid */
+/* .desktopGridWrapper {
+  grid-area: grid / grid / grid /grid;
+  margin-bottom: 40px;
+  box-sizing: inherit;
+  display: block;
+}
+
+.resultsGrid {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: inherit;
+  display: block;
+}
+
+.infiniteHitsWrapper {
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: inherit;
+  display: block;
+}
+
+.infiniteHitsList {
+  margin-top: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+} */
+
+/* .gridWrapper {
+  grid-template-columns: repeat(auto-fill, 25%);
+  border-left: 1px solid rgb(222, 222, 222);
+  display: grid;
+  border-radius: 5px;
+  overflow-x: hidden;
+  box-sizing: inherit;
+} */
+
+.gridWrapper {
+  margin-left: 3%;
+  margin-right: 5%;
+  border-left: 1px solid rgb(222, 222, 222);
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
 }
