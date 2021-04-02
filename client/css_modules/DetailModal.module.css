@@ -1,0 +1,84 @@
+.displayBlock {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 100;
+}
+
+.modalMain {
+  position: fixed;
+  background: white;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 1%;
+  border-radius: 3px;
+}
+
+.moduleSection {
+  padding-top: 30px;
+  display: flex;
+}
+
+.nutritionFactsWrapper {
+  margin-left: 0px;
+  margin: 0px;
+  top: 42%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: inherit;
+}
+
+.factWrapper {
+  margin: 0px;
+  top: 42%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.factDetails {
+  margin: 0px;
+  top: 42%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  /* padding: 0px 50px; */
+  box-sizing: inherit;
+}
+
+.factLabel {
+  font-size: 10px;
+  font-family: Plain;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  min-width: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: rgb(155, 155, 155);
+  box-sizing: inherit;
+}
+
+.factValue {
+  font-size: 16px;
+  font-family: Plain;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 0px 15px;
+  box-sizing: inherit;
+}

@@ -7,11 +7,16 @@
   box-sizing: border-box;
   border-bottom: 1px solid rgb(222, 222, 222);
   border-right: 1px solid rgb(222, 222, 222);
+  border-left: 1px solid transparent;
   display: block;
   height: 22.5vw;
 }
 
-  .gridCellContent{
+.gridCellWrapper:hover {
+  border: 1px solid grey;
+}
+
+.gridCellContent {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -19,6 +24,10 @@
   width: 100%;
   box-sizing: inherit;
   display: block;
+}
+
+.searchGridCell {
+  cursor: pointer;
 }
 
 .productTemplateGridCell {
