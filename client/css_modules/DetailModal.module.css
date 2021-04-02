@@ -37,7 +37,7 @@
 .productStoryTitle {
   text-align: center;
   font-size: 24px;
-  font-family: Plain;
+  font-family: Plain, sans-serif;
   line-height: 1.83;
   letter-spacing: 0px;
   margin-bottom: 2%;
@@ -46,7 +46,7 @@
 .productStory {
   text-align: center;
   font-size: 16px;
-  font-family: Plain;
+  font-family: Plain, sans-serif;
   color: rgb(11,11,11);
   position: relative;
   line-height: 1.5;
@@ -108,7 +108,7 @@
 
 .factLabel {
   font-size: 10px;
-  font-family: Plain;
+  font-family: Plain, sans-serif;
   line-height: 1;
   letter-spacing: 1.5px;
   min-width: 150px;
@@ -124,7 +124,7 @@
 
 .factValue {
   font-size: 16px;
-  font-family: Plain;
+  font-family: Plain, sans-serif;
   line-height: 1.5;
   letter-spacing: 0px;
   text-align: center;
