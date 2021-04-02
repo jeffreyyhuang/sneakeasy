@@ -24,7 +24,7 @@ class DetailModal extends React.Component {
       <section id="comparisonModal" className={styles.modalMain}>
         <img className={styles.modalImage} src={this.props.sneaker.photo_url}></img>
         <div className={styles.productDisplayStoryModule}>
-          <h2 className={styles.productStoryTitle}>Product Details</h2>
+          <h2 className={styles.productStoryTitle}>{this.props.sneaker.product_name}</h2>
           <p className={styles.productStory}>{this.props.sneaker.product_details}</p>
         </div>
         <div className={styles.dividerDash}></div>
