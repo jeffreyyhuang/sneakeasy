@@ -63,6 +63,7 @@
   font-weight: 350;
   letter-spacing: 3px;
   font-family: Plain, sans-serif;
+  cursor: pointer;
 }
 
 .headerDiscover {
@@ -80,6 +81,12 @@
   margin-right: 32px;
   color: rgb(119,119,119);
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.headerDiscover:hover {
+  color: black;
+  text-decoration: underline;
 }
 
 .headerShopAll {
@@ -97,6 +104,12 @@
   margin-right: 32px;
   color: rgb(119,119,119);
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.headerShopAll:hover {
+  color: black;
+  text-decoration: underline;
 }
 
 .headerTimeline {
@@ -114,6 +127,12 @@
   margin-right: 32px;
   color: rgb(119,119,119);
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.headerTimeline:hover {
+  color: black;
+  text-decoration: underline;
 }
 
 .headerStyles {
@@ -130,6 +149,12 @@
   text-transform: capitalize;
   color: rgb(119,119,119);
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.headerStyles:hover {
+  color: black;
+  text-decoration: underline;
 }
 
 .searchIcon {
