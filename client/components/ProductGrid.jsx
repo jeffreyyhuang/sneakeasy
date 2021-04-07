@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../css_modules/HomePage.module.css';
 import SneakerCard from './SneakerCard.jsx'
 
-const ReleaseGrid = (props) => {
+const ProductGrid = (props) => {
   return (
     <div className={styles.desktopGridWrapper}>
       <div className={styles.resultsGrid}>
@@ -18,4 +18,4 @@ const ReleaseGrid = (props) => {
   )
 }
 
-export default ReleaseGrid;
+export default ProductGrid;

@@ -45,3 +45,13 @@ LOAD DATA LOCAL INFILE './datasets/PhotosData.csv' INTO TABLE photos
 FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
+
+CREATE TABLE wishlist
+(
+  wishlist_id INT NOT NULL AUTO_INCREMENT,
+  product INT NOT NULL,
+  PRIMARY KEY (wishlist_id),
+  FOREIGN KEY (product)
+    REFERENCES sneakers (product_id)
+    ON DELETE CASCADE
+);

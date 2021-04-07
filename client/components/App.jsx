@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import styles from '../css_modules/HomePage.module.css';
-import ReleaseGrid from './ReleaseGrid.jsx';
+import ProductGrid from './ProductGrid.jsx';
 import AppBanner from './AppBanner.jsx';
 
 class App extends React.Component {
@@ -49,7 +49,7 @@ class App extends React.Component {
         {/* <div alt="Brand Container">
 
         </div> */}
-        <ReleaseGrid releases={this.state.releases}/>
+        <ProductGrid releases={this.state.releases}/>
       </div>
     )
   }

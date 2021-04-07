@@ -89,7 +89,7 @@
   text-decoration: underline;
 }
 
-.headerShopAll {
+.headerWishlist {
   display: block;
   order: 2;
   transition: color 600ms ease 0s;
@@ -107,12 +107,12 @@
   cursor: pointer;
 }
 
-.headerShopAll:hover {
+.headerWishlist:hover {
   color: black;
   text-decoration: underline;
 }
 
-.headerTimeline {
+.headerCollection {
   display: block;
   order: 2;
   transition: color 600ms ease 0s;
@@ -130,7 +130,7 @@
   cursor: pointer;
 }
 
-.headerTimeline:hover {
+.headerCollection:hover {
   color: black;
   text-decoration: underline;
 }

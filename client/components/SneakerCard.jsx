@@ -33,6 +33,7 @@ class SneakerCard extends React.Component {
                     <span className={styles.releaseDateText}>{this.props.sneaker.release_date.substring(0,10)}</span>
                   </div>
                 </div>
+                <button className={styles.wishlistButton}>Wishlist</button>
                 <img className={styles.gridCellImage} src={this.props.sneaker.photo_url}></img>
                 <div className={styles.gridCellLowerDataRowWrapper}>
                   <h2 className={styles.gridCellBaseText}>{this.props.sneaker.product_name}</h2>

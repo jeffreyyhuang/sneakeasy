@@ -18,8 +18,8 @@ const AppBanner = (props) => {
         Sneakeasy
         </a>
         <a className={styles.headerDiscover}>Discover</a>
-        <a className={styles.headerShopAll}>Shop</a>
-        <a className={styles.headerTimeline}>Timeline</a>
+        <a className={styles.headerWishlist}>Wishlist</a>
+        <a className={styles.headerCollection}>Collection</a>
         <a className={styles.headerStyles}>Styles</a>
         <svg className={styles.searchIcon} version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 15 15" xmlSpace="preserve" data-qa="search_icon" class="SearchIcon__TheSearchIcon-sc-1nqz99z-0 kRnXFq" aria-label="search">
           <g>

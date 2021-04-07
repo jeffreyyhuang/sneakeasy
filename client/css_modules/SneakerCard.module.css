@@ -82,6 +82,46 @@
   box-sizing: inherit;
 }
 
+.wishlistButton {
+  -webkit-box-align: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 56px;
+  padding: 0px;
+  z-index: 3;
+  font-size: 12px;
+  font-family: Plain, sans-serif;
+  line-height: 16px;
+  letter-spacing: 0px;
+  box-sizing: border-box;
+  font-weight: normal;
+  appearance: auto;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: center;
+  cursor: default;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+}
+
+.wishlistButton:hover {
+  border: 1px solid black;
+}
+
 .gridCellImage {
   max-height: 50%;
   min-height: 50%;
