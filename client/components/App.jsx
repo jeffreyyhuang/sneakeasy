@@ -3,13 +3,18 @@ import React from 'react';
 import styles from '../css_modules/HomePage.module.css';
 import ProductGrid from './ProductGrid.jsx';
 import AppBanner from './AppBanner.jsx';
+import Wishlist from './Wishlist.jsx';
 
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      releases: []
+      currentPage: 'releases',
+      releases: [],
+      wishlist: []
     }
+    this.addToWishlist = this.addToWishlist.bind(this);
+    this.switchPage = this.switchPage.bind(this);
   }
 
   componentDidMount() {
@@ -26,13 +31,25 @@ class App extends React.Component {
       })
   }
 
+  addToWishlist() {
+    // invoke axios.post method here
+  }
+
+  switchPage(pageName) {
+    if (pageName === 'discover') {
+      this.setState({currentPage: 'discover'});
+    } else if (pageName === 'wishlist') {
+      this.setState({currentPage: 'wishlist'});
+    }
+  }
+
   render() {
-    console.log('this.state.releases: ', this.state.releases);
-   
-    return (
-      <div className={styles.pageLayoutWrapper}>
-        <AppBanner/>
+    // console.log('this.state.releases: ', this.state.releases);
+    let currentPage;
+    if (this.state.currentPage === 'releases') {
+      currentPage =
         <div>
+          <div>
             <div>
               <div className={styles.moduleSection}>
                 <div className={styles.homeHeroSectionImageWrapper}>
@@ -45,11 +62,20 @@ class App extends React.Component {
                 </div>
               </div>
             </div>
+          </div>
+          <ProductGrid releases={this.state.releases} addToWishlist={this.addToWishlist}/>
         </div>
-        {/* <div alt="Brand Container">
-
-        </div> */}
-        <ProductGrid releases={this.state.releases}/>
+    } else if (this.state.currentPage === 'wishlist') {
+      currentPage =
+        <div>
+          <Wishlist />
+        </div>
+    }
+   
+    return (
+      <div className={styles.pageLayoutWrapper}>
+        <AppBanner switchPage={this.switchPage}/>
+        {currentPage}
       </div>
     )
   }
