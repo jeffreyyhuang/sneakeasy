@@ -6,10 +6,12 @@ class SneakerCard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false
+      show: false,
+      buttonToggle: false
     }
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal.bind(this);
+    this.handleWishlistClick = this.handleWishlistClick.bind(this);
   }
 
   showModal() {
@@ -18,6 +20,11 @@ class SneakerCard extends React.Component {
 
   hideModal() {
     this.setState({show: false});
+  }
+
+  handleWishlistClick() {
+    this.setState({buttonToggle: !this.state.buttonToggle});
+    this.props.addToWishlist(this.props.sneaker.product_id);
   }
 
   render() {
@@ -33,7 +40,7 @@ class SneakerCard extends React.Component {
                     <span className={styles.releaseDateText}>{this.props.sneaker.release_date.substring(0,10)}</span>
                   </div>
                 </div>
-                <button className={styles.wishlistButton}>Wishlist</button>
+                <button className={styles.wishlistButton} onClick={this.handleWishlistClick}>Wishlist</button>
                 <img className={styles.gridCellImage} src={this.props.sneaker.photo_url}></img>
                 <div className={styles.gridCellLowerDataRowWrapper}>
                   <h2 className={styles.gridCellBaseText}>{this.props.sneaker.product_name}</h2>

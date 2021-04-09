@@ -49,7 +49,7 @@ IGNORE 1 LINES;
 CREATE TABLE wishlist
 (
   wishlist_id INT NOT NULL AUTO_INCREMENT,
-  product INT NOT NULL,
+  product INT NOT NULL UNIQUE,
   PRIMARY KEY (wishlist_id),
   FOREIGN KEY (product)
     REFERENCES sneakers (product_id)

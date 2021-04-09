@@ -9,7 +9,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      currentPage: 'releases',
+      currentPage: 'discover',
       releases: [],
       wishlist: []
     }
@@ -31,8 +31,17 @@ class App extends React.Component {
       })
   }
 
-  addToWishlist() {
-    // invoke axios.post method here
+  addToWishlist(product_id) {
+    // console.log('product_id: ', product_id);
+    axios.post('/sneakers/wishlist', {
+      product_id: product_id
+    })
+      .then((response) => {
+
+      })
+      .catch((error) => {
+
+      })
   }
 
   switchPage(pageName) {
@@ -44,9 +53,9 @@ class App extends React.Component {
   }
 
   render() {
-    // console.log('this.state.releases: ', this.state.releases);
+    console.log('this.state.releases: ', this.state.releases);
     let currentPage;
-    if (this.state.currentPage === 'releases') {
+    if (this.state.currentPage === 'discover') {
       currentPage =
         <div>
           <div>

@@ -9,7 +9,7 @@ const ProductGrid = (props) => {
         <div className={styles.infiniteHitsWrapper}>
           <ul className={styles.infiniteHitsList}>
             <div className={styles.gridWrapper}>
-              {props.releases.map((sneaker) => <SneakerCard sneaker={sneaker}/>)}
+              {props.releases.map((sneaker) => <SneakerCard sneaker={sneaker} addToWishlist={props.addToWishlist}/>)}
             </div>
           </ul>
         </div>
