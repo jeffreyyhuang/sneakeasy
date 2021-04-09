@@ -13,9 +13,7 @@ module.exports = {
   },
 
   addToWishlist: (req, res) => {
-    // console.log('req.body: ', req.body);
     let mysqlString = `INSERT INTO wishlist(product) VALUES(${req.body.product_id})`;
-    // console.log(mysqlString);
     db.query(mysqlString, (error, results) => {
       if (error) {
         console.log('error with posting item to wishlist: ');

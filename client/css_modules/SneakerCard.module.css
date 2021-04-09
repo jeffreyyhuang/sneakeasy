@@ -116,6 +116,7 @@
   cursor: default;
   margin: 0em;
   font: 400 13.3333px Arial;
+  outline: none;
 }
 
 .wishlistButton:hover {

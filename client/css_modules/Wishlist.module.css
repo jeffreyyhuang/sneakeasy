@@ -20,11 +20,12 @@
 }
 
 .pageHeaderBox {
-  padding: 5em 20px;
+  padding: 1em 0px;
   box-sizing: border-box;
   position: relative;
   text-align: center;
   width: 100%;
+
 }
 
 .pageHeaderTitle {

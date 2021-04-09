@@ -22,9 +22,10 @@ class SneakerCard extends React.Component {
     this.setState({show: false});
   }
 
-  handleWishlistClick() {
+  handleWishlistClick(event) {
     this.setState({buttonToggle: !this.state.buttonToggle});
     this.props.addToWishlist(this.props.sneaker.product_id);
+    event.stopPropagation();
   }
 
   render() {
