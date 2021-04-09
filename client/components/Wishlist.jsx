@@ -10,7 +10,7 @@ const Wishlist = (props) => {
           <h1 className={styles.pageHeaderTitle}>Wishlist</h1>
         </div>
         <div className={styles.wishlistGrid}>
-
+          <ProductGrid products={props.wishlist}/>
         </div>
       </div>
     </div>

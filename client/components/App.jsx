@@ -27,7 +27,17 @@ class App extends React.Component {
         this.setState({releases: response.data})
       })
       .catch((error) => {
-        console.log('error with axios.get request: ', error);
+        console.log('error with get request for release data: ', error);
+      })
+  }
+
+  getWishlistData() {
+    axios.get('/sneakers/wishlist')
+      .then((response) => {
+        this.setState({wishlist: response.data})
+      })
+      .catch((error) => {
+        console.log('error with get request for wishlist data: ', error);
       })
   }
 
@@ -37,10 +47,10 @@ class App extends React.Component {
       product_id: product_id
     })
       .then((response) => {
-
+        console.log('product added to wishlist!');
       })
       .catch((error) => {
-
+        console.log('error adding item to wishlist: ', error);
       })
   }
 
@@ -48,12 +58,14 @@ class App extends React.Component {
     if (pageName === 'discover') {
       this.setState({currentPage: 'discover'});
     } else if (pageName === 'wishlist') {
-      this.setState({currentPage: 'wishlist'});
+      this.setState({currentPage: 'wishlist'},
+      () => {this.getWishlistData()});
     }
   }
 
   render() {
     console.log('this.state.releases: ', this.state.releases);
+    console.log('this.state.wishlist: ', this.state.wishlist);
     let currentPage;
     if (this.state.currentPage === 'discover') {
       currentPage =
@@ -72,12 +84,12 @@ class App extends React.Component {
               </div>
             </div>
           </div>
-          <ProductGrid releases={this.state.releases} addToWishlist={this.addToWishlist}/>
+          <ProductGrid products={this.state.releases} addToWishlist={this.addToWishlist}/>
         </div>
     } else if (this.state.currentPage === 'wishlist') {
       currentPage =
         <div>
-          <Wishlist />
+          <Wishlist wishlist={this.state.wishlist}/>
         </div>
     }
    

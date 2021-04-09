@@ -8,4 +8,6 @@ sneakers.get('/', controllers.getUpcomingReleases);
 
 sneakers.post('/wishlist', controllers.addToWishlist);
 
+sneakers.get('/wishlist', controllers.getWishlist);
+
 module.exports.sneakers = sneakers;
